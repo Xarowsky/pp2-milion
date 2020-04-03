@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <stdbool.h>
 
 #define N 100
 
@@ -87,7 +88,7 @@ struct pytania_1000000 {
 
 
 
-int pytania_odpowiedzi_100(int wylosowane_pytanie_100)
+bool pytania_odpowiedzi_100(int wylosowane_pytanie_100)
 {
     printf("Pytanie za 100 zl\n\n");
     char odp;
@@ -102,11 +103,11 @@ int pytania_odpowiedzi_100(int wylosowane_pytanie_100)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
     if (wylosowane_pytanie_100 == 2) {
@@ -120,11 +121,11 @@ int pytania_odpowiedzi_100(int wylosowane_pytanie_100)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
     if (wylosowane_pytanie_100 == 3) {
@@ -138,11 +139,11 @@ int pytania_odpowiedzi_100(int wylosowane_pytanie_100)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
 
     }
@@ -157,11 +158,11 @@ int pytania_odpowiedzi_100(int wylosowane_pytanie_100)
         scanf(" %c", &odp);
         if ((odp == 'C') || (odp == 'c')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
 
     }
@@ -177,11 +178,11 @@ int pytania_odpowiedzi_100(int wylosowane_pytanie_100)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
 
     }
@@ -189,7 +190,7 @@ int pytania_odpowiedzi_100(int wylosowane_pytanie_100)
     return 0;
 }
 
-int pytania_odpowiedzi_1000(int wylosowane_pytanie_1000)
+bool pytania_odpowiedzi_1000(int wylosowane_pytanie_1000)
 {
     printf("Pytanie za 1000 zl\n\n");
     char odp;
@@ -204,11 +205,11 @@ int pytania_odpowiedzi_1000(int wylosowane_pytanie_1000)
         scanf(" %c", &odp);
         if ((odp == 'C') || (odp == 'c')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -223,11 +224,11 @@ int pytania_odpowiedzi_1000(int wylosowane_pytanie_1000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -242,11 +243,11 @@ int pytania_odpowiedzi_1000(int wylosowane_pytanie_1000)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -261,11 +262,11 @@ int pytania_odpowiedzi_1000(int wylosowane_pytanie_1000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -280,18 +281,18 @@ int pytania_odpowiedzi_1000(int wylosowane_pytanie_1000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
     return 0;
 }
 
-int pytania_odpowiedzi_5000(int wylosowane_pytanie_5000)
+bool pytania_odpowiedzi_5000(int wylosowane_pytanie_5000)
 {
     printf("Pytanie za 5000 zl\n\n");
     char odp;
@@ -307,11 +308,11 @@ int pytania_odpowiedzi_5000(int wylosowane_pytanie_5000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -326,11 +327,11 @@ int pytania_odpowiedzi_5000(int wylosowane_pytanie_5000)
         scanf(" %c", &odp);
         if ((odp == 'C') || (odp == 'c')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -345,11 +346,11 @@ int pytania_odpowiedzi_5000(int wylosowane_pytanie_5000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -364,11 +365,11 @@ int pytania_odpowiedzi_5000(int wylosowane_pytanie_5000)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -383,18 +384,18 @@ int pytania_odpowiedzi_5000(int wylosowane_pytanie_5000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
     return 0;
 }
 
-int pytania_odpowiedzi_10000(int wylosowane_pytanie_10000)
+bool pytania_odpowiedzi_10000(int wylosowane_pytanie_10000)
 {
     printf("Pytanie za 10000 zl\n\n");
     char odp;
@@ -409,11 +410,11 @@ int pytania_odpowiedzi_10000(int wylosowane_pytanie_10000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -428,11 +429,11 @@ int pytania_odpowiedzi_10000(int wylosowane_pytanie_10000)
         scanf(" %c", &odp);
         if ((odp == 'C') || (odp == 'c')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -447,11 +448,11 @@ int pytania_odpowiedzi_10000(int wylosowane_pytanie_10000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -466,11 +467,11 @@ int pytania_odpowiedzi_10000(int wylosowane_pytanie_10000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -485,17 +486,17 @@ int pytania_odpowiedzi_10000(int wylosowane_pytanie_10000)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
         return 0;
 }
 
-int pytania_odpowiedzi_50000(int wylosowane_pytanie_50000)
+bool pytania_odpowiedzi_50000(int wylosowane_pytanie_50000)
 {
     printf("Pytanie za 50000 zl\n\n");
     char odp;
@@ -511,11 +512,11 @@ int pytania_odpowiedzi_50000(int wylosowane_pytanie_50000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -530,11 +531,11 @@ int pytania_odpowiedzi_50000(int wylosowane_pytanie_50000)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -549,11 +550,11 @@ int pytania_odpowiedzi_50000(int wylosowane_pytanie_50000)
         scanf(" %c", &odp);
         if ((odp == 'C') || (odp == 'c')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -568,11 +569,11 @@ int pytania_odpowiedzi_50000(int wylosowane_pytanie_50000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -587,11 +588,11 @@ int pytania_odpowiedzi_50000(int wylosowane_pytanie_50000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -599,7 +600,7 @@ int pytania_odpowiedzi_50000(int wylosowane_pytanie_50000)
     return 0;
 }
 
-int pytania_odpowiedzi_100000(int wylosowane_pytanie_100000)
+bool pytania_odpowiedzi_100000(int wylosowane_pytanie_100000)
 {
     printf("Pytanie za 100000 zl\n\n");
     char odp;
@@ -614,11 +615,11 @@ int pytania_odpowiedzi_100000(int wylosowane_pytanie_100000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -633,11 +634,11 @@ int pytania_odpowiedzi_100000(int wylosowane_pytanie_100000)
         scanf(" %c", &odp);
         if ((odp == 'C') || (odp == 'c')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -652,11 +653,11 @@ int pytania_odpowiedzi_100000(int wylosowane_pytanie_100000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -671,11 +672,11 @@ int pytania_odpowiedzi_100000(int wylosowane_pytanie_100000)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -690,18 +691,18 @@ int pytania_odpowiedzi_100000(int wylosowane_pytanie_100000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
     return 0;
 }
 
-int pytania_odpowiedzi_250000(int wylosowane_pytanie_250000)
+bool pytania_odpowiedzi_250000(int wylosowane_pytanie_250000)
 {
     printf("Pytanie za 250000 zl\n\n");
     char odp;
@@ -717,11 +718,11 @@ int pytania_odpowiedzi_250000(int wylosowane_pytanie_250000)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -736,11 +737,11 @@ int pytania_odpowiedzi_250000(int wylosowane_pytanie_250000)
         scanf(" %c", &odp);
         if ((odp == 'C') || (odp == 'c')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -755,11 +756,11 @@ int pytania_odpowiedzi_250000(int wylosowane_pytanie_250000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -774,11 +775,11 @@ int pytania_odpowiedzi_250000(int wylosowane_pytanie_250000)
         scanf(" %c", &odp);
         if ((odp == 'C') || (odp == 'c')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -793,18 +794,18 @@ int pytania_odpowiedzi_250000(int wylosowane_pytanie_250000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
     return 0;
 }
 
-int pytania_odpowiedzi_500000(int wylosowane_pytanie_500000)
+bool pytania_odpowiedzi_500000(int wylosowane_pytanie_500000)
 {
     puts("Pytanie za 500000 zl");
     char odp;
@@ -820,11 +821,11 @@ int pytania_odpowiedzi_500000(int wylosowane_pytanie_500000)
         scanf(" %c", &odp);
         if ((odp == 'C') || (odp == 'c')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -839,11 +840,11 @@ int pytania_odpowiedzi_500000(int wylosowane_pytanie_500000)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -858,11 +859,11 @@ int pytania_odpowiedzi_500000(int wylosowane_pytanie_500000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -877,11 +878,11 @@ int pytania_odpowiedzi_500000(int wylosowane_pytanie_500000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -896,11 +897,11 @@ int pytania_odpowiedzi_500000(int wylosowane_pytanie_500000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -908,7 +909,7 @@ int pytania_odpowiedzi_500000(int wylosowane_pytanie_500000)
     return 0;
 }
 
-int pytania_odpowiedzi_750000(int wylosowane_pytanie_750000)
+bool pytania_odpowiedzi_750000(int wylosowane_pytanie_750000)
 {
     puts("Pytanie za 750000 zl");
     char odp;
@@ -924,11 +925,11 @@ int pytania_odpowiedzi_750000(int wylosowane_pytanie_750000)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -943,11 +944,11 @@ int pytania_odpowiedzi_750000(int wylosowane_pytanie_750000)
         scanf(" %c", &odp);
         if ((odp == 'C') || (odp == 'c')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -962,11 +963,11 @@ int pytania_odpowiedzi_750000(int wylosowane_pytanie_750000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -981,11 +982,11 @@ int pytania_odpowiedzi_750000(int wylosowane_pytanie_750000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -1000,11 +1001,11 @@ int pytania_odpowiedzi_750000(int wylosowane_pytanie_750000)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -1012,7 +1013,7 @@ int pytania_odpowiedzi_750000(int wylosowane_pytanie_750000)
     return 0;
 }
 
-int pytania_odpowiedzi_1000000(int wylosowane_pytanie_1000000)
+bool pytania_odpowiedzi_1000000(int wylosowane_pytanie_1000000)
 {
     printf("Pytanie za 1000000 zl\n\n");
     char odp;
@@ -1027,18 +1028,18 @@ int pytania_odpowiedzi_1000000(int wylosowane_pytanie_1000000)
         scanf(" %c", &odp);
         if ((odp == 'B') || (odp == 'b')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
 
     if (wylosowane_pytanie_1000000 == 2) {
         memcpy(question2_1000000.question, "Ryba nie jest:\n", N);
-        memcpy(question2_1000000.Answer_A, "swinka\n", N);
+        memcpy(question2_1000000.Answer_A, "A.swinka\n", N);
         memcpy(question2_1000000.Answer_B, "B.rozpior\n", N);
         memcpy(question2_1000000.Answer_C, "C.krasnopiorka\n", N);
         memcpy(question2_1000000.Answer_D, "D.kraska\n", N);
@@ -1047,17 +1048,17 @@ int pytania_odpowiedzi_1000000(int wylosowane_pytanie_1000000)
         scanf(" %c", &odp);
         if ((odp == 'D') || (odp == 'd')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
     if (wylosowane_pytanie_1000000 == 3) {
         memcpy(question3_1000000.question, "Ktory aktor urodzil sie w roku opatentowania kinematografu braci Lumiere?\n", N);
-        memcpy(question3_1000000.Answer_A, "Rudolph Valentino\n", N);
+        memcpy(question3_1000000.Answer_A, "A,Rudolph Valentino\n", N);
         memcpy(question3_1000000.Answer_B, "B.Humphrey Bogart\n", N);
         memcpy(question3_1000000.Answer_C, "C.Charlie Chaplin\n", N);
         memcpy(question3_1000000.Answer_D, "D.Fred Astaire\n", N);
@@ -1066,11 +1067,11 @@ int pytania_odpowiedzi_1000000(int wylosowane_pytanie_1000000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -1085,17 +1086,17 @@ int pytania_odpowiedzi_1000000(int wylosowane_pytanie_1000000)
         scanf(" %c", &odp);
         if ((odp == 'C') || (odp == 'c')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
     if (wylosowane_pytanie_1000000 == 5) {
         memcpy(question5_1000000.question, "Likier maraskino produkuje się z maraski, czyli odmiany:\n", N);
-        memcpy(question5_1000000.Answer_A, "wisni\n", N);
+        memcpy(question5_1000000.Answer_A, "A.wisni\n", N);
         memcpy(question5_1000000.Answer_B, "B.jabloni\n", N);
         memcpy(question5_1000000.Answer_C, "C.figi\n", N);
         memcpy(question5_1000000.Answer_D, "D.gruszy\n", N);
@@ -1104,11 +1105,11 @@ int pytania_odpowiedzi_1000000(int wylosowane_pytanie_1000000)
         scanf(" %c", &odp);
         if ((odp == 'A') || (odp == 'a')) {
             printf("Odpowiedz prawidlowa\n\n");
-            return 1;
+            return true;
         }
         else {
             puts("Odpowiedz bledna");
-            return 0;
+            return false;
         }
     }
 
@@ -1120,13 +1121,16 @@ void zapis(FILE* plik, int wynik, char imie[20])
     fprintf(plik, "%s:%d\n", imie, wynik);
 }
 
-void odczyt(FILE *plik)
+bool odczyt(FILE *plik)
 {
-    char tab[500]="\0";
+    char tab[500];
+    if(plik==NULL){
+        return false;
+    }
     while (fscanf(plik, "%s", tab) != EOF) {
         printf("%s\n", tab);
     }
-   
+    return true;
 }
 
 
@@ -1148,16 +1152,6 @@ int main()
     unsigned int wybor, wynik = 0,zapisywanie_wyniku;
     char imie[20];
     srand(time(NULL));
-    wylosowane_pytanie_100 = 1 + rand() % 5;
-    wylosowane_pytanie_1000 = 1 + rand() % 5;
-    wylosowane_pytanie_5000 = 1 + rand() % 5;
-    wylosowane_pytanie_10000 = 1 + rand() % 5;
-    wylosowane_pytanie_50000= 1 + rand() % 5;
-    wylosowane_pytanie_100000= 1 + rand() % 5;
-    wylosowane_pytanie_250000= 1 + rand() % 5;
-    wylosowane_pytanie_500000 = 1 + rand() % 5;
-    wylosowane_pytanie_750000= 1 + rand() % 5;
-    wylosowane_pytanie_1000000= 1 + rand() % 5;
 
     puts("Wybierz jedna z opcji");
     puts("[1]-Nowa gra");
@@ -1170,16 +1164,30 @@ int main()
 
 
     while (wybor != 4) {
+    system("CLS");
+    wylosowane_pytanie_100 = 1 + rand() % 5;
+    wylosowane_pytanie_1000 = 1 + rand() % 5;
+    wylosowane_pytanie_5000 = 1 + rand() % 5;
+    wylosowane_pytanie_10000 = 1 + rand() % 5;
+    wylosowane_pytanie_50000= 1 + rand() % 5;
+    wylosowane_pytanie_100000= 1 + rand() % 5;
+    wylosowane_pytanie_250000= 1 + rand() % 5;
+    wylosowane_pytanie_500000 = 1 + rand() % 5;
+    wylosowane_pytanie_750000= 1 + rand() % 5;
+    wylosowane_pytanie_1000000= 1 + rand() % 5;
+    wynik=0;
         if (wybor == 1) {
-            if (pytania_odpowiedzi_100(wylosowane_pytanie_100) == 1) {
+            if(wynik==0){
+                if (pytania_odpowiedzi_100(wylosowane_pytanie_100) == true) {
                 wynik = 100;
                 system("cls");
             }
-            else {
+                else {
                 printf("Przegrales!\n Twoja wygrana:%d zl\n", wynik);
             }
+                }
             if (wynik == 100) {
-                if (pytania_odpowiedzi_1000(wylosowane_pytanie_1000) == 1) {
+                if (pytania_odpowiedzi_1000(wylosowane_pytanie_1000) == true) {
                     wynik = 1000;
                     system("cls");
                 }
@@ -1190,7 +1198,7 @@ int main()
                 }
             }
             if (wynik == 1000) {
-                if (pytania_odpowiedzi_5000(wylosowane_pytanie_5000) == 1) {
+                if (pytania_odpowiedzi_5000(wylosowane_pytanie_5000) == true) {
                     wynik = 5000;
                     system("cls");
                 }
@@ -1200,7 +1208,7 @@ int main()
                 }
             }
             if (wynik == 5000) {
-                if (pytania_odpowiedzi_10000(wylosowane_pytanie_10000) == 1) {
+                if (pytania_odpowiedzi_10000(wylosowane_pytanie_10000) == true) {
                     wynik = 10000;
                     system("cls");
                 }
@@ -1210,7 +1218,7 @@ int main()
                 }
             }
             if (wynik == 10000) {
-                if (pytania_odpowiedzi_50000(wylosowane_pytanie_50000) == 1) {
+                if (pytania_odpowiedzi_50000(wylosowane_pytanie_50000) == true) {
                     wynik = 50000;
                     system("cls");
                 }
@@ -1220,7 +1228,7 @@ int main()
                 }
             }
             if (wynik == 50000) {
-                if (pytania_odpowiedzi_100000(wylosowane_pytanie_100000) == 1) {
+                if (pytania_odpowiedzi_100000(wylosowane_pytanie_100000) == true) {
                     wynik = 100000;
                     system("cls");
                 }
@@ -1230,7 +1238,7 @@ int main()
                 }
             }
             if (wynik == 100000) {
-                if (pytania_odpowiedzi_250000(wylosowane_pytanie_250000) == 1) {
+                if (pytania_odpowiedzi_250000(wylosowane_pytanie_250000) == true) {
                     wynik = 250000;
                     system("cls");
                 }
@@ -1240,7 +1248,7 @@ int main()
                 }
             }
             if (wynik == 250000) {
-                if (pytania_odpowiedzi_500000(wylosowane_pytanie_500000) == 1) {
+                if (pytania_odpowiedzi_500000(wylosowane_pytanie_500000) == true) {
                     wynik = 500000;
                     system("cls");
                 }
@@ -1250,7 +1258,7 @@ int main()
                 }
             }
             if (wynik == 500000) {
-                if (pytania_odpowiedzi_750000(wylosowane_pytanie_750000) == 1) {
+                if (pytania_odpowiedzi_750000(wylosowane_pytanie_750000) == true) {
                     wynik = 750000;
                     system("cls");
                 }
@@ -1260,7 +1268,7 @@ int main()
                 }
             }
             if (wynik == 750000) {
-                if (pytania_odpowiedzi_1000000(wylosowane_pytanie_1000000) == 1) {
+                if (pytania_odpowiedzi_1000000(wylosowane_pytanie_1000000) == true) {
                     wynik = 1000000;
                     puts("Gratulacje !! Wygrywasz 1000000");
                 }
@@ -1272,7 +1280,7 @@ int main()
             puts("Czy chcesz zapisac wynik?");
             puts("[1]-Zapisz wynik");
             puts("[2]-Nie zapisuj wyniku");
-            scanf("%d", &zapisywanie_wyniku);
+            scanf(" %d", &zapisywanie_wyniku);
             if (zapisywanie_wyniku == 1) {
                 puts("Podaj swoje imie");
                 scanf("%s", &imie);
@@ -1306,7 +1314,7 @@ int main()
 
         scanf(" %d", &wybor);
         printf("\n");
-        
+
     }
     if(fclose(plik))
          puts("Blad zamkniecia pliku\n");
