@@ -1283,7 +1283,7 @@ int main()
             scanf(" %d", &zapisywanie_wyniku);
             if (zapisywanie_wyniku == 1) {
                 puts("Podaj swoje imie");
-                scanf("%s", &imie);
+                scanf("%s", imie);
                 zapis(plik, wynik, imie);
                 if (fseek(plik, 0, SEEK_SET) == -1) {
                     printf("Blad operacji przesuwania wskaznika\n");
